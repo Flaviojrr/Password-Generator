@@ -1,5 +1,5 @@
 public class No<T> {
-    private T no;
+    private User no;
     private No<T> next;
     private No<T> previous;
 
@@ -11,11 +11,11 @@ public class No<T> {
         this.previous = previous;
     }
 
-    public T getNo() {
+    public User getNo() {
         return no;
     }
 
-    public void setNo(T no) {
+    public void setNo(User no) {
         this.no = no;
     }
 

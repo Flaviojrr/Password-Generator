@@ -28,7 +28,9 @@ public class main {
         do {
             System.out.println("///// Password Generator /////"+
                     "\n(1)New User"+
-                    "\n(2)List accounts");
+                    "\n(2)List accounts"+
+                    "\n(3)Remove User"+
+                    "\n(4)Search User");
             int op = sc.nextInt();
             switch (op){
                 case 1:
@@ -36,6 +38,17 @@ public class main {
                     break;
                 case 2:
                     System.out.println(doubleList.toString());
+                    break;
+                case 3:
+                    System.out.println("Delete User:");
+                    String userDelete = sc.next();
+                    System.out.println(doubleList.deleteUser(userDelete));
+                    break;
+                case 4:
+                    System.out.println("Search User by CPF:");
+                    String userSearch = sc.next();
+                    doubleList.search(userSearch);
+                    break;
             }
         }while(loop=true);
 
