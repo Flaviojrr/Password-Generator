@@ -34,7 +34,7 @@ public class main {
             int op = sc.nextInt();
             switch (op){
                 case 1:
-                    doubleList.add(register());
+                    doubleList.add(register());;
                     break;
                 case 2:
                     System.out.println(doubleList.toString());
@@ -51,6 +51,5 @@ public class main {
                     break;
             }
         }while(loop=true);
-
     }
 }
