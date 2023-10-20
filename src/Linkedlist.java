@@ -1,5 +1,5 @@
 public class Linkedlist<T> {
-    private No<T> fist;
+    private No<T> fist; 
     private No<T> last;
     private No<T> previous;
     private No<T> current;
@@ -45,44 +45,40 @@ public class Linkedlist<T> {
         }else{
             while(current!=null){
                 if (current.getNo().getCpf().equals(nameUserDelete)){
-                    try {
-                        if(current.getNo().getCpf().equals(fist.getNo().getCpf())){
-                            if(current.getNext()==null){
-                                fist=null;
-                                last=null;
-                                return true;
-                            }
-                            fist=current.getNext();
-                            fist.setPrevious(null);
-                            fist.setNext(null);
-                            current.setNext(null);
-                            System.out.println("primeiro elemento da lista deletado");
-                            return true;
-                        }else if(current.getNo().getCpf().equals(last.getNo().getCpf())){
-                            if(current.getPrevious()==null){
-                                fist=null;
-                                last=null;
-                                return true;
-                            }
-                            last=current.getPrevious();
-                            last.setNext(null);
-                            current.setPrevious(null);
-                            System.out.println("Ultimo elemento da lista deletado");
-                            return true;
-                        }else{
-                            No<T>previous = current.getPrevious();
-                            No<T>next = current.getNext();
-                            previous.setNext(next);
-                            next.setPrevious(previous);
-                            current.setPrevious(null);
-                            current.setNext(null);
-                            System.out.println("Elemento em qualquer posição da lista deletado (tirando o primeiro e ultimo)");
+                    if(current.getNo().getCpf().equals(fist.getNo().getCpf())){
+                        if(current.getNext()==null){
+                            fist=null;
+                            last=null;
+                            System.out.println("Deleted element");
                             return true;
                         }
-                    }catch (Exception e){
-                        System.out.println(e.getLocalizedMessage());
-                        System.out.println(e.getMessage());
-                        return false;
+                        fist=current.getNext();
+                        fist.setPrevious(null);
+                        fist.setNext(null);
+                        current.setNext(null);
+                        System.out.println("Deleted element");
+                        return true;
+                    }else if(current.getNo().getCpf().equals(last.getNo().getCpf())){
+                        if(current.getPrevious()==null){
+                            fist=null;
+                            last=null;
+                            System.out.println("Deleted element");
+                            return true;
+                        }
+                        last=current.getPrevious();
+                        last.setNext(null);
+                        current.setPrevious(null);
+                        System.out.println("Deleted element");
+                        return true;
+                    }else{
+                        No<T>previous = current.getPrevious();
+                        No<T>next = current.getNext();
+                        previous.setNext(next);
+                        next.setPrevious(previous);
+                        current.setPrevious(null);
+                        current.setNext(null);
+                        System.out.println("Deleted element");
+                        return true;
                     }
                 }
                 current = current.getNext();
