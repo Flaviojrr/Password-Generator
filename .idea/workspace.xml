@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74853503-8333-4210-91dc-2f7afe864111" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Linkedlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Linkedlist.java" afterDir="false" />
-    </list>
+    <list default="true" id="74853503-8333-4210-91dc-2f7afe864111" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +21,11 @@
     <option name="BRANCH" value="origin/main" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -36,9 +38,12 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="70fa6513-4317-41e3-9d35-a9a648d7dc40" />
-        <option name="url" value="git@github.com:Flaviojrr/PasswordGenerator.git" />
+        <option name="url" value="git@github.com:Flaviojrr/Password-Generator.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -53,7 +58,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;algorithm-to-remove-users-&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/suicu/OneDrive/Área de Trabalho/Estudos2/Password Generator/src/Main.java&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
@@ -83,6 +88,17 @@
       <updated>1696534382881</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />

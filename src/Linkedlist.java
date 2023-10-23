@@ -6,12 +6,12 @@ public class Linkedlist<T> {
     public void add(User element){
         No<T> no = new No<T>();
         no.setNo(element);
-        if(fist==null && last==null){
+        if(fist==null && last==null && element!=null){
             fist=no;
             last=no;
             no.setPrevious(null);
             no.setNext(null);
-        }else{
+        }else if(element!=null){
             last.setNext(no);
             no.setPrevious(last);
             no.setNext(null);
@@ -36,6 +36,20 @@ public class Linkedlist<T> {
             }
         }
         return current.getNo().getUserName();
+    }
+    public boolean cpfValidator(String cpfSearch){
+        No<T> current = fist;
+        if(current==null){
+            return true;
+        }else{
+            while(current!=null){
+                if (current.getNo().getCpf().equals(cpfSearch)) {
+                    return false;
+                }
+                current = current.getNext();
+            }
+        }
+        return true;
     }
     public boolean deleteUser(String nameUserDelete){
         No<T> current = fist;
