@@ -26,13 +26,4 @@ public class No<T> {
     public void setNext(No<T> next) {
         this.next = next;
     }
-
-    @Override
-    public String toString() {
-        return "No{" +
-                "no=" + no +
-                ", next=" + next +
-                ", previous=" + previous +
-                '}';
-    }
 }
